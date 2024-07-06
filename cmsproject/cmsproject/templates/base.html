@@ -1,0 +1,13 @@
+{# Replace this with your base template #}
+{% extends "bootstrap5/base.html" %}
+
+{% load djangocms_alias_tags %}
+{% load cms_tags sekizai_tags %}
+
+<footer>
+  {% static_alias 'footer' %}
+</footer>
+
+
+{% render_block "js" %}
+</body>
